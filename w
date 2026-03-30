@@ -2068,7 +2068,9 @@ do
 
 	local IconList = nil
 	task.spawn(function()
-		IconList = loadstring(game:HttpGet('https://raw.githubusercontent.com/Dummyrme/Library/refs/heads/main/Icon.lua'))()
+		local iconSource = game:HttpGet('https://raw.githubusercontent.com/Dummyrme/Library/refs/heads/main/Icon.lua')
+		assert(type(iconSource) == "string", "HttpGet did not return a string (got " .. type(iconSource) .. ")")
+		IconList = loadstring(iconSource)()
 	end)
 	function gl(i)
 		while not IconList do task.wait(0.05) end
