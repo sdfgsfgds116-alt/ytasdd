@@ -32003,7 +32003,7 @@ ToolsTab:Button({
     Callback = function()
         task.spawn(function()
             pcall(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/uuuuuuu/refs/heads/main/DexPlusBackup.luau"))()
+                pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/ltseverydayyou/uuuuuuu/refs/heads/main/DexPlusBackup.luau"))() end)
             end)
         end)
     end
@@ -32016,7 +32016,7 @@ ToolsTab:Button({
     Callback = function()
         task.spawn(function()
             pcall(function()
-                loadstring(game:HttpGet("https://gist.githubusercontent.com/ltseverydayyou/2398adb0db70abc4f752219a676f6cb2/raw/SimpleSpyRework.luau"))()
+                pcall(function() loadstring(game:HttpGet("https://gist.githubusercontent.com/ltseverydayyou/2398adb0db70abc4f752219a676f6cb2/raw/SimpleSpyRework.luau"))() end)
             end)
         end)
     end
@@ -32029,7 +32029,7 @@ ToolsTab:Button({
     Callback = function()
         task.spawn(function()
             pcall(function()
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/RBXLight/Terminal/refs/heads/main/NAA"))()
+                pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/RBXLight/Terminal/refs/heads/main/NAA"))() end)
             end)
         end)
     end
